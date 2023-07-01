@@ -1,0 +1,56 @@
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgb(75, 118, 160);
+    background: linear-gradient(90deg, rgb(71, 110, 176) 0%, rgb(13, 120, 182) 90%);
+    padding: 50px 50px  200px ;
+}
+*
+{
+    box-sizing: border-box;   
+}
+input
+{
+    width: 250px;
+    height: 80px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.message
+{
+    width: 70%;
+    height: 200px;
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.9;
+    color: white;
+    font-size: 20px;
+}
+input:focus
+{
+    background-color: rgba(255, 255, 255, 0.503);
+
+}
+.get
+{
+    color: white;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 50px !important;
+}
+.send
+{
+    background-color: white !important;
+    color: black;
+    text-align: center;
+    border-radius: 0px !important;
+    cursor: pointer;
+}

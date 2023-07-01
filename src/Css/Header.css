@@ -1,0 +1,100 @@
+
+*
+{
+  box-sizing: border-box !important;
+
+}
+.firstdiv
+{
+  width: 100%;
+}
+@media (min-width:1000px) {
+  .firstdiv
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.centeredBox {
+  width: 100%;
+  text-align: center;
+  margin-top: 45%;
+}
+}
+.wrapper {
+  width: 40%;
+  height: 100vh;
+  font-size: 4vw;
+  font-weight: bold;
+  color: black;
+}
+.astrounot {
+  width:  20%;
+  height: auto;
+}
+.centeredBox {
+  width: 100%;
+  text-align: center;
+}
+.cursor {
+  border-left: 4px solid black;
+}
+
+.firstdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://helios-i.mashable.com/imagery/articles/01p7ESutSArBj5rGx2ZyTyo/hero-image.fill.size_1248x702.v1623389930.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    font-size: 3vw;
+  }
+
+.astrounot {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    font-size: 2vw;
+  }
+
+  .astrounot {
+    width: 40%;
+    height: auto;
+  }
+}
+.astrounot {
+  position: relative;
+  animation: moveUpDownn 1.8s infinite;
+  width: 100%  !important;
+}
+@keyframes moveUpDownn {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@media (max-width:1000px) {
+  .centeredBox p
+  {
+    margin-top: 100px !important;
+  }
+  
+}

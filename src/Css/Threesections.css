@@ -1,0 +1,305 @@
+/* Apply a reset to all elements */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* Set default styles for the Threesections component */
+.Threesections {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-admissions-training-course-flyer-image_254831.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(24, 9, 100);
+  padding: 50px 0;
+}
+/* Set styles for the description section */
+.description {
+  text-align: center;
+  padding: 50px 0;
+}
+.description h1 {
+  font-size: 8vw;
+}
+.description p {
+  font-size: 4vw;
+}
+/* Set styles for the product section */
+.prouducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw;
+}
+.prouducts img {
+  width: 350px !important;
+  height: 300px;
+  margin: 5vw;
+}
+/* Set styles for the section headings */
+.sec {
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 5vw;
+}
+.sec3 {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 500;
+  margin-bottom: 10vw;
+}
+/* Apply responsive styles using media queries */
+@media (min-width: 768px) {
+  .description h1 {
+    font-size: 6vw;
+  }
+
+  .description p {
+    font-size: 3vw;
+  }
+  .buttons button {
+    width: 25%;
+    /* margin: 1vw; */
+    font-size: 3vw;
+  }
+  .prouducts img {
+    width: 30vw;
+    margin: 2vw;
+  }
+
+  .sec {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+
+  .sec3 {
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .description h1 {
+    font-size: 4vw;
+  }
+
+  .description p {
+    font-size: 2vw;
+  }
+
+  .buttons button {
+    width: 20%;
+    /* margin: 1vw; */
+    font-size: 2vw;
+  }
+
+  .prouducts img {
+    width: 20vw;
+    margin: 2vw;
+  }
+
+  .sec {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .sec3 {
+    font-size: 2vw;
+    margin-bottom: 3vw;
+  }
+}
+.buttons
+{
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    justify-content: center; 
+}
+.buttons button
+{
+ width: 40%;
+ border-radius: 0px  !important;
+ background-color: transparent;
+ color: white;
+ border:  3px solid white;
+}
+.buttons #btn1
+{
+     border-top-left-radius: 15px  !important;
+     border-bottom-left-radius: 15px !important;
+}
+.buttons #btn3
+{
+     border-top-right-radius: 15px  !important;
+     border-bottom-right-radius: 15px !important;
+}
+button.active {
+    background: rgb(73,58,180);
+    background: linear-gradient(90deg, rgb(8, 3, 47) 0%, rgba(241,29,253,1) 90%);
+    animation: moveUpDown 0.3s ease-in;
+  }
+  @keyframes moveUpDown {
+    0% {
+      background: transparent;
+    }
+    100% {
+      background: rgb(73,58,180);
+      background: linear-gradient(90deg, rgba(73,58,180,1) 0%, rgba(241,29,253,1) 90%);
+    }
+  }
+.prouducts div {
+  position: relative;
+}
+.prouducts img {
+  object-fit: cover;
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+.prouducts .div1::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div1:hover::after {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.797);
+}
+.prouducts .div2::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div2:hover::after {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.778);
+}
+.prouducts .div3::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div3:hover::after {
+  opacity: 0.7;
+  background-color: rgb(5, 16, 21);
+}
+
+.prouducts .div4::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div4:hover::after {
+  opacity: 0.7;
+  background-color: rgb(6, 6, 6);
+}
+
+.prouducts .div5::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div5:hover::after {
+  opacity: 0.7;
+  background-color: rgb(0, 0, 0);
+}
+
+.prouducts .div6::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 85%;
+  height: 83%;
+  background-color: rgb(206, 6, 6);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+*
+{
+  box-sizing: border-box !important;
+}
+.prouducts .div6:hover::after {
+  opacity: 0.7;
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+  
